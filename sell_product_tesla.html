@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nha Tesla</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E31937', // Tesla red
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-200 px-4 py-2.5 fixed w-full z-20 top-0 left-0">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <a href="#" class="flex items-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Tesla-optimus-bot-gen-2-scaled_%28cropped%29.jpg" alt="Tesla Robot Logo" class="h-8 mr-2">
+                <span class="self-center text-xl font-semibold whitespace-nowrap text-primary">TeslaBotSet</span>
+            </a>
+            <div class="flex items-center">
+                <div class="relative">
+                    <input type="text" class="block p-2.5 w-64 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-red-500 focus:border-red-500" placeholder="Search...">
+                </div>
+                <button class="ml-4 bg-red-500 text-white px-3 py-1 rounded text-sm">LIVE</button>
+                <button class="ml-4 text-gray-500"><i class="fas fa-moon"></i></button>
+                <button class="ml-4 text-gray-500"><i class="fas fa-bell"></i></button>
+                <button class="ml-4 relative">
+                    <img class="w-8 h-8 rounded-full" src="https://placehold.co/32x32" alt="user photo">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside class="fixed top-0 left-0 z-10 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0" aria-label="Sidebar">
+        <div class="h-full px-3 pb-4 overflow-y-auto bg-white">
+            <ul class="space-y-2 font-medium">
+                <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">Home</a></li>
+                <li><a href="robots.html" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">Robots</a></li>
+                <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">Orders</a></li>
+                <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">Payment</a></li>
+                <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">Support</a></li>
+                <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">Upgrade to Pro <span class="ml-auto bg-red-200 text-red-800 px-2 py-1 rounded text-xs">+ </span></a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="p-4 md:ml-64">
+        <div class="p-4">
+            <!-- Banner -->
+            <div class="bg-red-200 text-gray-800 p-8 rounded-lg flex justify-between items-center mb-6">
+                <div>
+                    <h2 class="text-2xl font-bold">Hi,i'm Robot</h2>
+                    <p class="mt-2">The Tesla robot store is your gateway to the future of automation. Discover Optimus, the humanoid robot designed to handle unsafe, repetitive, or boring tasks with advanced AI and bi-pedal mobility.</p>
+                    <button class="mt-4 bg-white text-primary px-4 py-2 rounded border border-primary">Learn more</button>
+                </div>
+                <img src="https://humanoidroboticstechnology.com/wp-content/uploads/2025/01/tesla-unveils-ambitious-optimus-humanoid-roadmap.jpg" alt="Tesla Optimus" class="h-32">
+            </div>
+
+            <!-- Content Sections -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Left Column: Popular and Ongoing -->
+                <div class="md:col-span-2">
+                    <!-- Popular Section -->
+                    <div class="bg-white p-6 rounded-lg shadow mb-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold">Popular</h3>
+                            <a href="#" class="text-red-600">view all</a>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="bg-red-100 p-4 rounded-lg text-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Tesla-optimus-bot-gen-2-scaled_%28cropped%29.jpg" alt="Optimus Gen-2" class="mx-auto h-32 object-cover rounded">
+                                <p class="font-semibold">Optimus Gen-2</p>
+                                <p class="text-sm text-gray-500">Advanced humanoid robot for everyday tasks. Features improved dexterity and AI integration for seamless performance.</p>
+                                <p class="text-red-600 font-bold">$25,000</p>
+                                <button class="mt-2 bg-primary text-white px-3 py-1 rounded w-full">Buy Now</button>
+                            </div>
+                            <div class="bg-red-100 p-4 rounded-lg text-center">
+                                <img src="https://cmta.net/wp-content/uploads/Tesla-Optimus-Gen-2-scaled.webp" alt="Optimus Gen-3" class="mx-auto h-32 object-cover rounded">
+                                <p class="font-semibold">Optimus Gen-3</p>
+                                <p class="text-sm text-gray-500">Next-gen model with enhanced speed and learning capabilities. Ideal for industrial and home use.</p>
+                                <p class="text-red-600 font-bold">$30,000</p>
+                                <button class="mt-2 bg-primary text-white px-3 py-1 rounded w-full">Buy Now</button>
+                            </div>
+                            <div class="bg-red-100 p-4 rounded-lg text-center">
+                                <img src="http://www.tesery.com/cdn/shop/articles/breaking-news-tesla-optimus-humanoid-robot-set-to-hit-the-market-by-2025-264235.jpg?v=1714094389" alt="Optimus Home Edition" class="mx-auto h-32 object-cover rounded">
+                                <p class="font-semibold">Optimus Home Edition</p>
+                                <p class="text-sm text-gray-500">Compact version for household chores. Safe, efficient, and powered by Tesla AI.</p>
+                                <p class="text-red-600 font-bold">$20,000</p>
+                                <button class="mt-2 bg-primary text-white px-3 py-1 rounded w-full">Buy Now</button>
+                            </div>
+                            <div class="bg-red-100 p-4 rounded-lg text-center">
+                                <img src="https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/images/panoramic/tesla-bot-inc-GettyImages-1439732586_543058_r7h5hp.jpg" alt="Optimus Pro" class="mx-auto h-32 object-cover rounded">
+                                <p class="font-semibold">Optimus Pro</p>
+                                <p class="text-sm text-gray-500">Professional grade for businesses. Handles complex tasks with precision and reliability.</p>
+                                <p class="text-red-600 font-bold">$35,000</p>
+                                <button class="mt-2 bg-primary text-white px-3 py-1 rounded w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ongoing Section -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold">Ongoing</h3>
+                            <a href="#" class="text-red-600">view all</a>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="bg-red-100 p-4 rounded-lg text-center">
+                                <img src="https://humanoidroboticstechnology.com/wp-content/uploads/2025/01/tesla-unveils-ambitious-optimus-humanoid-roadmap.jpg" alt="Optimus Accessories Kit" class="mx-auto h-32 object-cover rounded">
+                                <p class="font-semibold">Optimus Accessories Kit</p>
+                                <p class="text-sm text-gray-500">Enhance your Optimus with additional tools and upgrades for specialized tasks.</p>
+                                <p class="text-red-600 font-bold">$5,000</p>
+                                <button class="mt-2 bg-primary text-white px-3 py-1 rounded w-full">Buy Now</button>
+                            </div>
+                            <div class="bg-red-100 p-4 rounded-lg text-center">
+                                <img src="https://cmta.net/wp-content/uploads/Tesla-Optimus-Gen-2-scaled.webp" alt="Optimus Factory Edition" class="mx-auto h-32 object-cover rounded">
+                                <p class="font-semibold">Optimus Factory Edition</p>
+                                <p class="text-sm text-gray-500">Optimized for manufacturing environments. Durable and high-performance.</p>
+                                <p class="text-red-600 font-bold">$40,000</p>
+                                <button class="mt-2 bg-primary text-white px-3 py-1 rounded w-full">Buy Now</button>
+                            </div>
+                            <div class="bg-red-100 p-4 rounded-lg text-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Tesla-optimus-bot-gen-2-scaled_%28cropped%29.jpg" alt="Optimus AI Upgrade" class="mx-auto h-32 object-cover rounded">
+                                <p class="font-semibold">Optimus AI Upgrade</p>
+                                <p class="text-sm text-gray-500">Software update for smarter decision-making and task adaptation.</p>
+                                <p class="text-red-600 font-bold">$10,000</p>
+                                <button class="mt-2 bg-primary text-white px-3 py-1 rounded w-full">Buy Now</button>
+                            </div>
+                            <div class="bg-red-100 p-4 rounded-lg text-center">
+                                <img src="http://www.tesery.com/cdn/shop/articles/breaking-news-tesla-optimus-humanoid-robot-set-to-hit-the-market-by-2025-264235.jpg?v=1714094389" alt="Optimus Companion" class="mx-auto h-32 object-cover rounded">
+                                <p class="font-semibold">Optimus Companion</p>
+                                <p class="text-sm text-gray-500">Personal assistant robot for daily life support and companionship.</p>
+                                <p class="text-red-600 font-bold">$22,000</p>
+                                <button class="mt-2 bg-primary text-white px-3 py-1 rounded w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeslaBotSet - Robots</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E31937',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <!-- Same Navbar -->
+    <nav class="bg-white border-b border-gray-200 px-4 py-2.5 fixed w-full z-20 top-0 left-0">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <a href="index.html" class="flex items-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Tesla-optimus-bot-gen-2-scaled_%28cropped%29.jpg" alt="Tesla Robot Logo" class="h-8 mr-2">
+                <span class="self-center text-xl font-semibold whitespace-nowrap text-primary">TeslaBotSet</span>
+            </a>
+            <div class="flex items-center">
+                <div class="relative">
+                    <input type="text" class="block p-2.5 w-64 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-red-500 focus:border-red-500" placeholder="Search...">
+                </div>
+                <button class="ml-4 bg-red-500 text-white px-3 py-1 rounded text-sm">LIVE</button>
+                <button class="ml-4 text-gray-500"><i class="fas fa-moon"></i></button>
+                <button class="ml-4 text-gray-500"><i class="fas fa-bell"></i></button>
+                <button class="ml-4 relative">
+                    <img class="w-8 h-8 rounded-full" src="https://placehold.co/32x32" alt="user photo">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Same Sidebar -->
+    <aside class="fixed top-0 left-0 z-10 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0" aria-label="Sidebar">
+        <div class="h-full px-3 pb-4 overflow-y-auto bg-white">
+            <ul class="space-y-2 font-medium">
+                <li><a href="index.html" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">Home</a></li>
+                <li><a href="robots.html" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">Robots</a></li>
+                <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">Orders</a></li>
+                <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">Payment</a></li>
+                <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">Support</a></li>
+                <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">Upgrade to Pro <span class="ml-auto bg-red-200 text-red-800 px-2 py-1 rounded text-xs">+ </span></a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main Content for Robots -->
+    <div class="p-4 md:ml-64">
+        <div class="p-4">
+            <h1 class="text-3xl font-bold mb-6">Robots</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Tesla-optimus-bot-gen-2-scaled_%28cropped%29.jpg" alt="Optimus Gen-2" class="mx-auto h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold">Optimus Gen-2</h3>
+                    <p class="text-gray-500 mb-2">Revolutionary humanoid for automating daily routines. Bi-pedal design ensures mobility in any environment.</p>
+                    <p class="text-red-600 font-bold">$25,000</p>
+                    <button class="mt-2 bg-primary text-white px-4 py-2 rounded w-full">Buy Now</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <img src="https://humanoidroboticstechnology.com/wp-content/uploads/2025/01/tesla-unveils-ambitious-optimus-humanoid-roadmap.jpg" alt="Optimus Gen-3" class="mx-auto h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold">Optimus Gen-3</h3>
+                    <p class="text-gray-500 mb-2">Upgraded with faster processing and better sensors. Perfect for complex tasks requiring precision.</p>
+                    <p class="text-red-600 font-bold">$30,000</p>
+                    <button class="mt-2 bg-primary text-white px-4 py-2 rounded w-full">Buy Now</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <img src="https://cmta.net/wp-content/uploads/Tesla-Optimus-Gen-2-scaled.webp" alt="Optimus Industrial" class="mx-auto h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold">Optimus Industrial</h3>
+                    <p class="text-gray-500 mb-2">Built for factory settings. Handles heavy lifting and repetitive assembly with ease.</p>
+                    <p class="text-red-600 font-bold">$40,000</p>
+                    <button class="mt-2 bg-primary text-white px-4 py-2 rounded w-full">Buy Now</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <img src="http://www.tesery.com/cdn/shop/articles/breaking-news-tesla-optimus-humanoid-robot-set-to-hit-the-market-by-2025-264235.jpg?v=1714094389" alt="Optimus Home Assistant" class="mx-auto h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold">Optimus Home Assistant</h3>
+                    <p class="text-gray-500 mb-2">Your smart home companion. Assists with chores, entertainment, and security.</p>
+                    <p class="text-red-600 font-bold">$22,000</p>
+                    <button class="mt-2 bg-primary text-white px-4 py-2 rounded w-full">Buy Now</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <img src="https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/images/panoramic/tesla-bot-inc-GettyImages-1439732586_543058_r7h5hp.jpg" alt="Optimus Pro Edition" class="mx-auto h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-semibold">Optimus Pro Edition</h3>
+                    <p class="text-gray-500 mb-2">Advanced features for professional use. Integrates with Tesla ecosystem for optimal performance.</p>
+                    <p class="text-red-600 font-bold">$35,000</p>
+                    <button class="mt-2 bg-primary text-white px-4 py-2 rounded w-full">Buy Now</button>
+                </div>
+                <!-- Add more if needed -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
